@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>usef CV</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/css.css" />
+	<style>
+		.intro h1:before {
+			content: 'yousef';
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">USEF</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="introduction.html">Introduction</a></li>
+				        <li><a href="contact-me.php">Contact me</a></li>
+				        <li><a href="achivement.html">Achievements</a></li>
+				        <li><a href="skill.html">Skills</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I’m yousef</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/ava.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>STUDENT OF<br><span id="typed"></span></h1>
+				</div>
+				<p>
+					19 years old & born in sabzevar. CE student in sharif university of Technology & rank 56 in university entrance exam. fan of programming and AI.	</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>Made by Yousef sadidi</p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="https://t.me/usefsdd"><i class="fa fa-send"></i></a></li>
+						<li><a href="http://twitter.com"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="http://github.com/usefsdd"><i class="fa fa-github"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		strings: ["sharif university of technology", "computer engineering"],
+
+		typeSpeed:70,backDelay:500,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
